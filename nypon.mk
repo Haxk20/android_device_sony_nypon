@@ -125,10 +125,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	config.disable_atlas=true
 
 #Trim properties
-ro.sys.fw.trim_enable_memory=805306368
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.trim_empty_percent=50
-ro.sys.fw.trim_cache_percent=50
-ro.sys.fw.bservice_limit=3
-ro.sys.fw.bservice_age=3000
-ro.sys.fw.empty_app_percent=25
+    ro.sys.fw.trim_enable_memory=805306368
+    ro.sys.fw.bservice_enable=true
+    ro.sys.fw.trim_empty_percent=50
+    ro.sys.fw.trim_cache_percent=50
+    ro.sys.fw.bservice_limit=3
+    ro.sys.fw.bservice_age=3000
+    ro.sys.fw.empty_app_percent=25

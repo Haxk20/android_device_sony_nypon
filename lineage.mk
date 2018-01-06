@@ -18,7 +18,7 @@ $(call inherit-product, device/sony/nypon/full_nypon.mk)
 
 
 # Inherit CM common Phone stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Screen
 TARGET_SCREEN_HEIGHT := 960
@@ -30,5 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="LT22i-user 4.1.2 6.1.1.B.1.100 m7t3zw test-keys" \
     BUILD_FINGERPRINT="SEMC/LT22i_1262-1172/LT22i:4.1.2/6.1.1.B.1.100/m7t3zw:user/release-keys"
 
-PRODUCT_NAME := cm_nypon
+PRODUCT_NAME := lineage_nypon
 PRODUCT_DEVICE := nypon

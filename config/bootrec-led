@@ -1,27 +1,27 @@
-#!/sbin/busybox sh
+#!/sbin/toybox sh
 
 # Reset LED bar
-busybox echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
-busybox echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
-busybox echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
+toybox echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
+toybox echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
+toybox echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
 
 # In animaton
-for i in $(/sbin/busybox seq 0 255)
+for i in $(/sbin/toybox seq 0 255)
 do
-    busybox echo $i > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
-    busybox echo $i > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
-    busybox echo $i > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
+    toybox echo $i > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
+    toybox echo $i > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
+    toybox echo $i > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
 done 
 
 # Trigger vibration
-busybox echo '50' > /sys/class/timed_output/vibrator/enable
+toybox echo '50' > /sys/class/timed_output/vibrator/enable
 
 # Out animaton
-for i in $(/sbin/busybox seq 0 255)
+for i in $(/sbin/toybox seq 0 255)
 do
     j=$((255 - $i))
     
-    busybox echo $j > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
-    busybox echo $j > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
-    busybox echo $j > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
+    toybox echo $j > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
+    toybox echo $j > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
+    toybox echo $j > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
 done

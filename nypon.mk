@@ -28,6 +28,8 @@ $(call inherit-product, device/sony/montblanc-common/montblanc.mk)
 
 # Inhert vendor proprietary files
 $(call inherit-product-if-exists, vendor/sony/nypon/nypon-vendor.mk)
+# Build GO
++$(call inherit-product, build/make/target/product/go_defaults_512.mk)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \

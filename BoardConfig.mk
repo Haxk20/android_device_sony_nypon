@@ -17,7 +17,7 @@ ifeq ($(DEVICE_ENABLE_TOOLCHAIN),true)
 # KERNEL_TOOLCHAIN := /home/sergeyl/eabi/prebuilt/gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux/bin
 # KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
 # KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.3/bin/arm-eabi-
-KERNEL_TOOLCHAIN := /home/haxk20/losxste8/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN := /home/haxk20/losxste8.1/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
 #KERNEL_TOOLCHAIN := /home/chrono/root/arm-linux-gnueabihf-5.0/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 endif

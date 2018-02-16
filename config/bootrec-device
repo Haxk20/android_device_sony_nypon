@@ -1,4 +1,4 @@
-#!/sbin/toybox sh
+#!/sbin/busybox sh
 
 export BOOTREC_EVENT_NODE="/dev/input/event2 c 13 66"
 export BOOTREC_EVENT="/dev/input/event2"

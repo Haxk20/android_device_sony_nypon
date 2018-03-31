@@ -32,7 +32,7 @@ $(call inherit-product, device/sony/nypon/prebuilt/resources-540x960.mk)
 $(call inherit-product, device/sony/nypon/nypon.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := cm_nypon
+PRODUCT_NAME := lineage_nypon
 PRODUCT_DEVICE := nypon
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

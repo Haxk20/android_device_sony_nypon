@@ -205,10 +205,10 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    
 
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+    
 
     <!-- The VoiceMail default value is displayed to my own number if it is true -->
     <bool name="config_telephony_use_own_number_for_voicemail">true</bool>
@@ -223,7 +223,7 @@
 
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->
-    <integer name="config_backKillTimeout">1000</integer>
+    
 
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
@@ -236,7 +236,7 @@
             16 - App switch
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
+    
 
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
@@ -253,8 +253,7 @@
     <bool name="config_enableWifiDisplay">true</bool>
  
     <!-- Performance profiles -->
-    <string name="config_perf_profile_prop">sys.perf.profile</string>
-    <string name="config_perf_profile_default_entry">1</string>
+    
 
     <!-- Device configuration setting the /proc/sys/vm/extra_free_kbytes 
     tunable in the kernel (if it exists). A high value will increase the amount of memory 
@@ -290,9 +289,6 @@
       the default value chosen by ActivityManager based on screen size and total memory for the largest
        lowmemorykiller bucket, and scaled proportionally to the smaller buckets. 0 keeps the default. -->
     <integer name="config_lowMemoryKillerMinFreeKbytesAdjust">0</integer>
-    
-    <!-- Enable lockscreen translucent decor -->
-    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
     
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->

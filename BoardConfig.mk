@@ -15,7 +15,6 @@ COMMON_GLOBAL_CFLAGS += -DSTE_HDMI
 
 DEVICE_ENABLE_TOOLCHAIN := true
 ifeq ($(DEVICE_ENABLE_TOOLCHAIN),true)
-KERNEL_TOOLCHAIN := /home/haxk20/losxste8.1/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 endif
 

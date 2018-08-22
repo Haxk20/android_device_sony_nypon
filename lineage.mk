@@ -23,6 +23,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Screen
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # Build fingerprints
 PRODUCT_BUILD_PROP_OVERRIDES += \
